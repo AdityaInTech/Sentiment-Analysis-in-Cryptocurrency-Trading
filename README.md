@@ -51,7 +51,7 @@ crypto-sentiment-trading-matlab/
 ├── calculate_advanced_metrics.m    # Quantitative Analytics: Sharpe, Sortino, Win Rate, Max DD
 ├── render_visualizations.m         # UI Analytics: Multi-pane Interactive Visual Dashboard
 └── generate_trading_report.m       # Executive Reporting: Automated Text Summary Exporter ```
-
+---
 ### Script & Function Module Descriptions
 
 | File Name | Function Purpose & Description |
