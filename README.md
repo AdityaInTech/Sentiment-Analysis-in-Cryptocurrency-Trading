@@ -52,7 +52,33 @@ crypto-sentiment-trading-matlab/
 ├── render_visualizations.m         # UI Analytics: Multi-pane Interactive Visual Dashboard
 └── generate_trading_report.m       # Executive Reporting: Automated Text Summary Exporter ```
 
-Script & Function Module DescriptionsFile NameFunction Purpose & Descriptionmain.mPrimary Entry Point. Orchestrates the end-to-end pipeline execution from user input prompting to report generation.fetch_data.mGenerates/ingests high-frequency 1-year hourly OHLCV candle datasets alongside synchronized social feed volumes.calculate_indicators.mComputes technical momentum and volatility features, including Relative Strength Index (RSI), MACD, and Moving Averages.analyze_sentiment.mEvaluates text sentiment across posts using VADER lexicons and derives normalized 24-hour rolling sentiment Z-scores.fit_timeseries_model.mEstablishes an ARIMAX(1,0,1) econometric model utilizing normalized sentiment Z-scores as exogenous variables.generate_signals.mCombines technical momentum, sentiment divergence, and return forecasts to produce actionable signals (+1 BUY, 0 HOLD, -1 SELL).backtest_strategy.mSimulates cash vs. crypto portfolio growth starting with $10,000 initial capital, incorporating trade tracking.calculate_advanced_metrics.mCalculates quantitative risk-adjusted performance statistics: Sharpe Ratio, Sortino Ratio, Maximum Drawdown, and Win Rate.render_visualizations.mRenders 3 standalone interactive dashboard figures: Price & Signals, Sentiment Z-Score, and Cumulative Equity Growth.generate_trading_report.mGenerates an executive textual performance report printed to the console and saved to disk as Trading_Report_<SYMBOL>.txt.🛠️ Requirements & ToolboxesDeveloped and verified using MATLAB R2023b or later. The project leverages the following MATLAB Toolboxes:Statistics and Machine Learning Toolbox™: Feature selection, classification algorithms, and normalization routines.Econometrics Toolbox™: ARIMAX estimation, volatility modeling, and time-series return forecasting.Text Analytics Toolbox™: VADER dictionary sentiment classification and text preprocessing pipelines.Financial Toolbox™: Portfolio backtesting metrics and equity growth modeling.Datafeed Toolbox™ (Optional): Direct API integration with social media streams and live exchange market feeds.
+### Script & Function Module Descriptions
+
+| File Name | Function Purpose & Description |
+| :--- | :--- |
+| **`main.m`** | **Primary Entry Point.** Orchestrates the end-to-end pipeline execution from user input prompting to report generation. |
+| **`fetch_data.m`** | Generates/ingests high-frequency 1-year hourly OHLCV candle datasets alongside synchronized social feed volumes. |
+| **`calculate_indicators.m`** | Computes technical momentum and volatility features, including Relative Strength Index (RSI), MACD, and Moving Averages. |
+| **`analyze_sentiment.m`** | Evaluates text sentiment across posts using VADER lexicons and derives normalized 24-hour rolling sentiment Z-scores. |
+| **`fit_timeseries_model.m`** | Establishes an ARIMAX(1,0,1) econometric model utilizing normalized sentiment Z-scores as exogenous variables. |
+| **`generate_signals.m`** | Combines technical momentum, sentiment divergence, and return forecasts to produce actionable signals (`+1` BUY, `0` HOLD, `-1` SELL). |
+| **`backtest_strategy.m`** | Simulates cash vs. crypto portfolio growth starting with $10,000 initial capital, incorporating trade tracking. |
+| **`calculate_advanced_metrics.m`** | Calculates quantitative risk-adjusted performance statistics: Sharpe Ratio, Sortino Ratio, Maximum Drawdown, and Win Rate. |
+| **`render_visualizations.m`** | Renders 3 standalone interactive dashboard figures: Price & Signals, Sentiment Z-Score, and Cumulative Equity Growth. |
+| **`generate_trading_report.m`** | Generates an executive textual performance report printed to the console and saved to disk as `Trading_Report_<SYMBOL>.txt`. |
+
+---
+
+### 🛠️ Requirements & Toolboxes
+
+Developed and verified using **MATLAB R2023b or later**. The project leverages the following MATLAB Toolboxes:
+
+* **Statistics and Machine Learning Toolbox™**: Feature selection, classification algorithms, and normalization routines.
+* **Econometrics Toolbox™**: ARIMAX estimation, volatility modeling, and time-series return forecasting.
+* **Text Analytics Toolbox™**: VADER dictionary sentiment classification and text preprocessing pipelines.
+* **Financial Toolbox™**: Portfolio backtesting metrics and equity growth modeling.
+* **Datafeed Toolbox™** *(Optional)*: Direct API integration with social media streams and live exchange market feeds.
+
 **🚀 Quick Start**
 1. Clone the RepositoryBashgit clone [https://github.com/YOUR_GITHUB_USERNAME/crypto-sentiment-trading-matlab.git](https://github.com/YOUR_GITHUB_USERNAME/crypto-sentiment-trading-matlab.git)
 cd crypto-sentiment-trading-matlab
