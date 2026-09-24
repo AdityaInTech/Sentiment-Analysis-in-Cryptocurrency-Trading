@@ -1,0 +1,19 @@
+=======================================================
+       QUANTITATIVE TRADING EXECUTIVE REPORT           
+=======================================================
+ Asset Symbol      : BTC
+ Timestamp         : 2026-09-24 08:49:26
+ Operational State : UNDERPERFORMING BENCHMARK
+-------------------------------------------------------
+ PERFORMANCE SUMMARY
+-------------------------------------------------------
+ Total Trades Executed : 254 trades
+ Strategy Net Return   : 2.46%
+ Benchmark Return      : 23.36%
+ Alpha vs Benchmark    : -20.91%
+ Maximum Drawdown      : -3.28%
+-------------------------------------------------------
+ FORWARD-LOOKING ASSESSMENT & RECOMMENDATIONS
+-------------------------------------------------------
+ The strategy currently trails buy-and-hold by 20.91%. Consider tuning sentiment Z-score execution thresholds or adding a trend filter (e.g., 200 SMA) to reduce whipsaw trades.
+=======================================================
